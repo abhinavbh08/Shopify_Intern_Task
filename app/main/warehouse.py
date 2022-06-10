@@ -1,5 +1,5 @@
 from ..forms import WareHouseForm
-from flask import Blueprint
+from flask import Blueprint, request
 from flask import flash, redirect, render_template, url_for
 from ..services import warehouse_service
 
@@ -12,7 +12,9 @@ bp = Blueprint(
 def add_warehouse():
     """Add a warehouse."""
     form = WareHouseForm()
-    if form.validate_on_submit():
+    # if form.validate_on_submit():
+    # Doing this due for replit compatibility.
+    if request.method=="POST":   
         warehouse_service.add(name=form.name.data, location=form.location.data)
         flash("Your warehouse has been added.")
         return redirect(url_for("items.index"))

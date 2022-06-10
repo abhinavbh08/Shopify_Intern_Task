@@ -20,7 +20,9 @@ def index():
 def add():
     """Add an item."""
     form = ItemForm()
-    if form.validate_on_submit():
+    # if form.validate_on_submit():
+    # Doing this due for replit compatibility.
+    if request.method=="POST":
         item_service.add(
             item_id=form.item_id.data,
             item_name=form.item_name.data,
@@ -59,7 +61,9 @@ def update_item(item_id):
         form.item_type.data = item.item_type
         form.item_price.data = item.item_price
         form.item_description.data = item.item_description
-    if form.validate_on_submit():
+    # if form.validate_on_submit():
+    # Doing this due for replit compatibility.
+    if request.method=="POST":
         item_service.update(
             item,
             item_name=form.item_name.data,
@@ -83,7 +87,9 @@ def add_item_to_warehouse(item_id):
         form.item_type.data = item.item_type
         form.item_price.data = item.item_price
         form.item_description.data = item.item_description
-    if form.validate_on_submit():
+    # if form.validate_on_submit():
+    # Doing this due for replit compatibility.
+    if request.method=="POST":
         try:
             item_service.add_warehouse(
                 item=item,
