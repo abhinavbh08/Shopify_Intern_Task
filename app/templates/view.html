@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+          <th>Item ID</th>
+          <th>Item Name</th>
+          <th>Item Type</th>
+          <th>Item Price</th>
+          <th>Item Description</th>
+          <th></th>
+          <th></th>
+        </tr>
+        {% for item in items %}
+        <tr>
+          <td>{{ item.item_id }}</td>
+          <td>{{ item.item_name }}</td>
+          <td>{{ item.item_type }}</td>
+          <td>{{ item.item_price }}</td>
+          <td>{{ item.item_description }}</td>
+          <td><a href="{{ url_for('items.update_item', item_id = item.item_id) }}">Update</a></td>
+          <td><a href="{{ url_for('items.delete_item', item_id = item.item_id) }}">Delete</a></td>
+          <td><a href="{{ url_for('items.add_item_to_warehouse', item_id = item.item_id) }}">Add item to Warehouses</a></td>
+          <td><a href="{{ url_for('items.view_warehouses_for_item', item_id = item.item_id) }}">View warehouses where this item in present</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

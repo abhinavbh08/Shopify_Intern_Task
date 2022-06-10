@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+            <title>{{ title }} - InvTracker</title>
+        {% else %}
+            <title>Welcome to InvTracker.</title>
+        {% endif %}
+        {% block head %}
+        {% endblock %}      
+    </head>
+    <body>
+        <div>InvTrack: 
+            <a href="{{ url_for('items.index') }}">Home Page</a> &nbsp
+            <a href="{{ url_for('items.add') }}">Add Item</a> &nbsp
+            <a href="{{ url_for('items.view') }}">View all items</a> &nbsp
+            <a href="{{ url_for('warehouse.add_warehouse') }}">Add Warehouse</a> &nbsp
+            <a href="{{ url_for('warehouse.view_warehouses') }}">View Warehouses</a> &nbsp
+        </div>
+        <hr>        
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>

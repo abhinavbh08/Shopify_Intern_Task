@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+        </tr>
+        {% for warehouse in warehouses %}
+        <tr>
+          <td>{{ warehouse.name }}</td>
+          <td>{{ warehouse.location }}</td>
+          <td><a href="{{ url_for('warehouse.view_items_in_warehouse', wh_id = warehouse.id) }}">View items present in this warehouse.</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

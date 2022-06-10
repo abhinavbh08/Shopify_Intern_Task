@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to InvTracker: The inventory tracker.</h1>
+    <h2>Please choose any of the options to do the task you want to do.</h2>
+
+    <a href="{{ url_for('items.index') }}">Home Page</a> - The current page <br><br>
+    <a href="{{ url_for('items.add') }}">Add Item</a> - Add an item to the inventory <br><br>
+    <a href="{{ url_for('items.view') }}">View all items</a> - View all the items available in the inventory, update, delete, assign it to warehouses and view where this item is present. <br><br>
+    <a href="{{ url_for('warehouse.add_warehouse') }}">Add Warehouse</a> - Add a warehouse <br><br>
+    <a href="{{ url_for('warehouse.view_warehouses') }}">View Warehouses</a> - View all the warehouses and items present in the warehouses. <br><br>
+
+{% endblock %}

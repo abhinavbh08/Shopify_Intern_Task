@@ -1,0 +1,4 @@
+{% macro form_field(field) %}
+    {% if field.flags.required %}{{ field.label(text=field.label.text + "*") }}
+    {% else %}{{ field.label }}{% endif %}
+{% endmacro %}

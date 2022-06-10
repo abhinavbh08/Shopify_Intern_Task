@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <h3>Item ID: {{ warehouse.name }}</h3> <br>
+    <h3>Item Name: {{ warehouse.location }}</h3> <br><br>
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Quantity</th>
+        </tr>
+        {% for item, cnt in item_list %}
+        <tr>
+          <td>{{ item.item_id }}</td>
+          <td>{{ item.item_name }}</td>
+          <td>{{ cnt }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
