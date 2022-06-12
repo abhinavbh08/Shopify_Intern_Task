@@ -7,6 +7,7 @@ I have used python with flask framework, and sqlite in-memory database for compl
 
 The deployed repl.it for this repository is here: [https://replit.com/@AbhinavBhatt/ShopifyInternTaskv=1](https://replit.com/@AbhinavBhatt/ShopifyInternTask?v=1)
 Click on Run button first and then on Open website button.
+
 ![replit](first.png)
 
 or 
