@@ -6,7 +6,7 @@ The additional feature which I have implemented is adding warehouses and assigni
 I have used python with flask framework, and sqlite in-memory database for completing the task.
 
 The deployed repl.it for this repository is here: [https://replit.com/@AbhinavBhatt/ShopifyInternTaskv=1](https://replit.com/@AbhinavBhatt/ShopifyInternTask?v=1)
-
+Click on Run button first and then on Open website button.
 ![replit](first.png)
 
 or 
