@@ -5,7 +5,8 @@ I have implemented a basic inventory management system with CRUD functionality.
 The additional feature which I have implemented is adding warehouses and assigning items to warehouses along with the quantity of items.
 I have used python with flask framework, and sqlite in-memory database for completing the task.
 
-The deployed repl.it for this repository is here - # Add link when deployed.
+The deployed repl.it for this repository is here - 
+# Add link when deployed.
 Please note that it is recommended the view the app in a new tab by clicking the following button.
 # Add image from replit
 
