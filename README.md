@@ -7,12 +7,12 @@ I have used python with flask framework, and sqlite in-memory database for compl
 
 The deployed repl.it for this repository is here
 <!-- Add link when deployed. -->
-Please note that it is highly recommended the view the app in a new tab by clicking the button to expand to the new tab.
+Please note that it is highly recommended the view the app in a new tab by clicking the button in repl.it to expand to the new tab.
 <!-- Add image from replit -->
 
 Alternatively this can be deployed on repl.it by following these steps.
 1. Import this repository on repl.it. The libraries will be installed once this is imported.
 2. Click on run. This will run the web app.
 
-Please note that it is highly recommended the view the app in a new tab by clicking the button to expand to the new tab.
+Please note that it is highly recommended the view the app in a new tab by clicking the button in repl.it to expand to the new tab.
 <!-- Add image from replit. -->
