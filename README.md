@@ -11,7 +11,7 @@ Please note that it is highly recommended the view the app in a new tab by click
 <!-- Add image from replit -->
 
 Alternatively this can be deployed on repl.it by following these steps.
-1. Open repl.it and click on import from github.
+1. Open repl.it and click on create and then import from github.
 2. Give the link for the repository while importing.
 3. The libraries will be installed automatically once the above step is done.
 4. Click on run. This will run the web app.
