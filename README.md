@@ -11,8 +11,10 @@ Please note that it is highly recommended the view the app in a new tab by click
 <!-- Add image from replit -->
 
 Alternatively this can be deployed on repl.it by following these steps.
-1. Import this repository on repl.it. The libraries will be installed once this is imported.
-2. Click on run. This will run the web app.
+1. Open repl.it and click on import from github.
+2. Import this repository on repl.it. Give the link for the repository in repl.it.
+3. The libraries will be installed once this is imported.
+4. Click on run. This will run the web app.
 
 Please note that it is highly recommended the view the app in a new tab by clicking the button in repl.it to expand to the new tab.
 <!-- Add image from replit. -->
